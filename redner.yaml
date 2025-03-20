@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: vscode-server
+    env: docker
+    plan: free
+    repo: https://github.com/YOUR_GITHUB/vscode-on-render
+    branch: main
+    envVars:
+      - key: PASSWORD
+        value: "yourpassword"  # Set your password here
+    autoDeploy: true
